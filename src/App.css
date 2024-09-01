@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+
+}
+h1{
+color:purple;
+font-size: 3rem;
+text-align: center;
+}
+.Card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px;
+   
+    margin: 0% 20% ;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    width:200px;
+    height: 300px;
+    border:3px solid;
+    border-image: linear-gradient(0deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.img{
+    margin: 22%;
+}
+@keyframes animation {
+    0%{
+        border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    }
+    50%{
+        border-image: linear-gradient(180deg,rgb(0,143,104), rgb(250,224,66)) 1;
+    }
+    75%{
+        border-image: linear-gradient(360deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    }
+}
+h2{
+    color:green;
+    text-align: center;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+}
